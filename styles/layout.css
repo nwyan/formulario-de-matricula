@@ -49,3 +49,24 @@ aside {
     }
   }
 }
+
+@media (width <= 600px) {
+  #app {
+    grid-template-columns: initial;
+    grid-template-rows: 1fr 2fr;
+    width: auto;
+
+    & main {
+      padding: 1.5rem;
+      grid-row: 2/4;
+    }
+
+    & aside {
+      grid-row: 1/2;
+    }
+  }
+
+  aside .desktop-only {
+    display: none;
+  }
+}

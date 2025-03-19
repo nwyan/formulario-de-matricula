@@ -95,3 +95,9 @@ input {
     display: none;
   }
 }
+
+@media (width <= 600px) {
+  .address .flex {
+    flex-direction: column;
+  }
+}
